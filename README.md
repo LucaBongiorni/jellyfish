@@ -2,7 +2,7 @@ Jellyfish is a Linux based userland gpu rootkit proof of concept project utilizi
 system calls and OpenCL to interact with gpu. Code currently supports Nvidia and AMD graphics cards.
 
 Advantages of gpu stored memory:
-Hardly any memory analysis tools if not any.
+No gpu malware analysis tools available on web.
 Can snoop on cpu host memory via DMA.
 gpu can be used for fast/swift mathematical calculations like xor'ing or parsing.
 
