@@ -85,7 +85,7 @@ void jelly_init(){
     }
 }
 
-char *limit_buf(const char *buffer){
+static void limit_buf(const char *buffer){
     if(sizeof(buffer) > VRAM_LIMIT){
         buffer = "Buffer too big for GPU!";
     }

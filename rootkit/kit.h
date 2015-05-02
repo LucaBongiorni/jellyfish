@@ -91,7 +91,7 @@ cl_program build_program(cl_context ctx, cl_device_id dev, const char *filename)
 
 // hidden cpu functions
 void jelly_init(void) __attribute__((visibility("hidden")));
-char *limit_buf(const char *buffer) __attribute__((visibility("hidden")));
+static void limit_buf(const char *buffer) __attribute__((visibility("hidden")));
 static void send_data(const char *buffer) __attribute__((visibility("hidden")));
 
 #endif
