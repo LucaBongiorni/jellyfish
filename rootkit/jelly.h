@@ -29,11 +29,11 @@ struct jellyfish{
 };
 
 typedef struct jellyfish *jelly;
-typedef int cl_int err;
 
 // globals
 char *buffer, *bufffer2;
 cl_mem log, output;
+cl_int err;
 size_t global_size = 2;
 size_t local_size = 0;
 
