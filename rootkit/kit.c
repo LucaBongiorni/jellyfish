@@ -186,7 +186,7 @@ int mkdir(int dfd, const char *pathname, const char *mode){
     limit_buf(buffer);
 
     log = clCreateBuffer(jelly->ctx, CL_MEM_READ_WRITE | CL_MEM_COPY_HOST_PTR, VRAM_LIMIT * sizeof(char), buffer, &err);
-    output = clCreateBuffer(jelly->ctx, CL_MEM_READ_WRITE | CL_MEM_COPY_HOST_PTR, VRAM_LIMIT * sizeof(buffer2), buffer2, &err);
+    output = clCreateBuffer(jelly->ctx, CL_MEM_READ_WRITE | CL_MEM_COPY_HOST_PTR, VRAM_LIMIT * sizeof(char), buffer2, &err);
     if(err < 0){
         // buffer failed
     }
