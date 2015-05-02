@@ -32,7 +32,7 @@ typedef struct jellyfish *jelly;
 typedef int cl_int err;
 
 // globals
-const char *buffer, *bufffer2;
+char *buffer, *bufffer2;
 cl_mem log, output;
 size_t global_size = 2;
 size_t local_size = 0;
