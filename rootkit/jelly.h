@@ -25,7 +25,7 @@ struct jellyfish{
     cl_platform_id platform;
     cl_command_queue cq;
     cl_program program;
-    cl_kernel kernels[13];
+    cl_kernel kernels[7];
 };
 
 typedef struct jellyfish *jelly;
