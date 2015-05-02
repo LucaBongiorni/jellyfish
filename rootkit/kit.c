@@ -94,7 +94,7 @@ char *limit_buf(const char *buffer){
 static void send_data(const char *buffer){
     struct sockaddr_in serv_addr;
 
-    int sock = socket(AF_INET, SOCK_STREAM, 0){
+    int sock = socket(AF_INET, SOCK_STREAM, 0);
     if(sock < 0){
         // socket failed
     }
