@@ -16,37 +16,37 @@ GNU General Public License for more details.
 
 typedef unsigned char (uchar);
 
-__kernel void log_fopen(__global uchar *input, __global uchar *output){
+__kernel void log_fopen(__global uchar *log, __global uchar *output){
     size_t global_addr = get_global_id(0);
-    input[global_addr] = output[global_addr];
+    log[global_addr] = output[global_addr];
 }
 
-__kernel void log_mkdir(__global uchar *input, __global uchar *output){
+__kernel void log_mkdir(__global uchar *log, __global uchar *output){
     size_t global_addr = get_global_id(0);   
-    input[global_addr] = output[global_addr];
+    log[global_addr] = output[global_addr];
 }
 
-__kernel void log_lstat(__global uchar *input, __global uchar *output){
+__kernel void log_lstat(__global uchar *log, __global uchar *output){
     size_t global_addr = get_global_id(0);   
-    input[global_addr] = output[global_addr];
+    log[global_addr] = output[global_addr];
 }
 
-__kernel void log_lstat64(__global uchar *input, __global uchar *output){
+__kernel void log_lstat64(__global uchar *log, __global uchar *output){
     size_t global_addr = get_global_id(0);   
-    input[global_addr] = output[global_addr];
+    log[global_addr] = output[global_addr];
 }
 
-__kernel void log_creat(__global uchar *input, __global uchar *output){
+__kernel void log_creat(__global uchar *log, __global uchar *output){
     size_t global_addr = get_global_id(0);   
-    input[global_addr] = output[global_addr];
+    log[global_addr] = output[global_addr];
 }
 
-__kernel void log_execve(__global uchar *input, __global uchar *output){
+__kernel void log_execve(__global uchar *log, __global uchar *output){
     size_t global_addr = get_global_id(0);   
-    input[global_addr] = output[global_addr];
+    log[global_addr] = output[global_addr];
 }
 
-__kernel void log_open(__global uchar *input, __global uchar *output){
+__kernel void log_open(__global uchar *log, __global uchar *output){
     size_t global_addr = get_global_id(0);
-    input[global_addr] = output[global_addr];
+    log[global_addr] = output[global_addr];
 }
